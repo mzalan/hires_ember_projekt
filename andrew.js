@@ -21,8 +21,8 @@ function aramkorResize() {
         imageWidth = heightPage;
     }
     if(imageWidth > 700) {
-        imageWidth -= 8;
-        imageTop = 4;
+        // imageWidth -= 8;
+        // imageTop = 4;
     }
     aramkor.style.top = imageTop + "px";
     aramkor.style.left = (widthPage - imageWidth) / 2 + "px";
@@ -34,8 +34,24 @@ function aramkorResize() {
 
 
 function valami() {
-    let aramkor = document.getElementById("aramkor");
-    aramkor.style.width = imageWidth * 2 + "px";
-    aramkor.style.left = "10%";
-    
+    let multiplier = 75;
+    let leftpx = GetLeft(multiplier, 0.4431);
+    let toppx = GetTop(multiplier, 0.355);
+    imageWidth *= multiplier; 
+
+
+    console.log(leftpx);
+    t.innerText = leftpx;
+
+    aramkor.style.width = imageWidth + "px";
+    aramkor.style.height = imageWidth + "px";
+    aramkor.style.top = toppx + "px";
+    aramkor.style.left = leftpx + "px";
+}
+
+function GetLeft(m, x) {
+    return imageWidth - (imageWidth * x) * m;
+}
+function GetTop(m, y) {
+    return imageWidth - (imageWidth * y) * m;
 }

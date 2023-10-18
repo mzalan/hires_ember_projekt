@@ -1,8 +1,28 @@
 body {
     background: black;
+    margin:0;
 }
 
 #aramkor {
     position: fixed;
-    /* transition: 4s; */
+    transition: 2s;
+    border:2px solid white;
+    top:0;
+}
+#t {
+    position:fixed;
+    top:0;
+    left:0;
+    color:white;
+    font-size:35px;
+}
+#dot {
+    position: fixed;
+    background-color: red;
+    border-radius: 100%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width:10px;
+    height:10px;
 }
