@@ -4,7 +4,7 @@ body{
 
 .container {
     position: relative;
-    width: 1000px;
+    width: 900px;
     margin: 20px auto;
     height: 1000px;
     background-color: antiquewhite;
@@ -12,7 +12,7 @@ body{
 }
 
 #kep1 {
-    width: 998px;
+    width: 898px;
     height: 600px;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -67,21 +67,21 @@ body{
     width: 49%;
     float: left;
     background-color: black;
-    height: 300px;
+    height: 320px;
     border-radius: 100%;
-    margin: 5px;
+    margin: 4px;
 }
 
 #kep2{
     width: 90%;
     padding: 20px 25px;
-    height: 250px;
+    height: 270px;
     border-radius: 100%;
 }
 
 .nagy{
     width: 80%;
-    padding: 35px 40px 10px 40px;
+    padding: 40px 40px 10px 40px;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -101,7 +101,7 @@ body{
     top: 62%;
     left: 0;
     width: 48%;
-    height: 300px;
+    height: 320px;
     opacity: 0;
     transition: 1s ease;
     background-color: white;
@@ -115,7 +115,7 @@ body{
     top: 62%;
     right: 0;
     width: 48%;
-    height: 300px;
+    height: 320px;
     opacity: 0;
     transition: 1s ease;
     background-color: white;
