@@ -3,32 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan Turing</title>
+    <title>Alan Turing & Andrew Grove</title>
     <link rel="stylesheet" href="alan_style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+
+    <img src="alanhome.jpg" id="alanhome">
+    <img src="andrewhome.jpg" id="andrewhome">
+    <div id="homeDiv">
+        <div id="title">Alan Turing & Andrew Grove</div><br>
+        
+        <span id="startBtn" onclick="if(!isStartPres) {startPres()}">Bemutató indítása</span>
+    </div>
+
+    <div class="container" style="display:none" id="container">
+        <div class="header" id="header">
         <img src="alan_turing1.webp" alt="Alan Turing" id="kep1">
-        <div class="overlay">
-            <div class="cim">Alan Turing</div>
+        <div class="overlay" id="overlay1">
+            <div class="cim" id="cim">Alan Turing</div>
             <div class="alcim">a modern számítógép-tudomány egyik atyja</div>
         </div>
         </div>
-        <div class="box">
+        <div class="box" id="box1">
             <img src="alan_turing2.jpg" alt="" id="kep2">
-            <div class="overlay2">
-                <div class="nagy">Legnagyobb eredménye</div>
+            <div class="overlay2" id="overlay2">
+                <div class="nagy" id="nagy1">Legnagyobb eredménye</div>
                 <div class="kicsi">Nagyon fontos résztvevője volt annak a Bletchley Park-i kódtörő csoportnak, amely a nácik hírhedt Enigmáját törte fel. Részt vett a lengyel „Bomba” továbbfejlesztett változatának kidolgozásában, aminek segítségével az Enigma üzeneteinek kulcsát keresték meg, amivel meg tudták fejteni az üzeneteket. Általában 3-6 órával a kódváltás után el tudták olvasni a németek üzeneteit. Az Enigma kódjainak megfejtése döntő jelentőségű volt a németek legyőzésében. Becslések szerint Turing munkája 2 évvel rövidítette le a 2. világháborút.</div>
             </div>
         </div>
-        <div class="box">
+        <div class="box" id="box2">
             <img src="alan_turing3.jpg" alt="" id="kep2">
-            <div class="overlay3">
-                <div class="nagy">Egyéb munkássága</div>
+            <div class="overlay3" id="overlay3">
+                <div class="nagy" id="nagy2">Egyéb munkássága</div>
                 <div class="kicsi">1945 és 1948 között az ACE (Automatic Computing Engine) programon dolgozott és közben elméleti munkákat publikált programozásról, neurális hálókról, mesterséges intelligenciáról (AI). Az AI egyik első elméleti megalapozója volt. A Manchesteri Egyetemen kollégáival közösen dolgozta ki az egyik legkorábbi digitális számítógépet, a Manchester Mark 1-et. 1950-ben megjelent híres írása, a Computing Machinery and Intelligence, amiben leírja a Turing-tesztet, amivel el lehet dönteni, hogy egy gép gondolkozik-e.</div>
             </div>
         </div>
     </div>
-</body>
+    <div id="arrow" onclick="if(!isNext){next()}">Tovább</div>
+    <div id="container2" onmouseover="nameSzukules()" onmouseout="nameVissza()">
+        <img src="andrew.png" alt="" id="andrew">
+        <div id="t1" class="name">Andrew</div>
+        <div id="t2" class="name">Grove</div>
+        
+    </div>
+    <div id="footer">Andrew Grove, eredeti nevén András István Gróf, 1936. szeptember 2-án született Budapest, Magyarországon. Fiatal éveiben, 1956-ban a magyar forradalom közepén menekült az Egyesült Államokba a szovjet megszállás elől, ahol új életet kezdett. Bár eleinte nem beszélt angolul, hamar megtanulta a nyelvet és elkezdte tanulmányait az Egyesült Államokban. Grove végzettségét a City College of New York-ban szerezte meg, majd folytatta tanulmányait a University of California, Berkeley-n, ahol doktorált.
+
+        Mérnökként dolgozva Grove az informatikai iparágban ismertebb lett. Korábbi munkahelyei közé tartozott a Fairchild Semiconductor, ahol találkozott Gordon Moore-rel és Robert Noyce-val. Ezek a találkozások később vezettek az Intel Corporation megalapításához 1968-ban.
+        
+        Az Intel gyorsan növekedni kezdett, és Grove kulcsfontosságú szerepet játszott a vállalat fejlesztésében. Őt választották az Intel elnök-vezérigazgatójává, és a vezetése alatt az Intel vált az informatikai iparág egyik vezető szereplőjévé. Az Intel a mikroprocesszorok fejlesztésében vált meghatározó erővé, ami kulcsszerepet játszott az informatikai forradalomban.
+        
+        Grove-nek nevezetes volt az üzleti filozófiája, amit a "Only the Paranoid Survive" (Csak a paranoiások maradnak életben) című könyvében fejtett ki. Szerinte a változásokat és az innovációt folyamatosan figyelni kell, és a vállalatnak alkalmazkodnia kell az új kihívásokhoz.
+        
+        1997-ben Grove visszavonult az Intel éléről, de továbbra is az igazgatótanács tagja maradt. Nyugdíjazása után sikeres írói karriert kezdett, több könyvet is publikált, köztük az említett "Only the Paranoid Survive"-t.
+        
+        Andrew Grove 2016-ban elhunyt, de öröksége és hatása az informatikai iparágban és az üzleti világban továbbra is élő marad.</div>
+    <script src="script.js"></script>
+</body> 
 </html>
